@@ -24,14 +24,14 @@ The information below is a summary and the full report can be downloaded [here](
 
 ## Creating Data Warehouse
 
-To create a simple example Data Warehouse, the team created a single relational database in MySQL. Using Python packages mysql.connector and tweepy, the team was able to automatically pull ~80 tweets related to 'covid-19' in a specific date range into the MySQL database. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb).
+To create a simple example Data Warehouse, the team created a single relational database in MySQL. Using Python packages mysql.connector and tweepy, the team was able to automatically pull 81 tweets related to 'covid-19' in a specific date range into the MySQL database. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb).
 
 This database had a single table that only stored:
 - idTweets
 - Created_At
 - Tweet
 
-When attempting to bring in other related data such as location, MySQL struggled to parse the semi-structured data twitter produces. This would prove to be less of a concern in a NoSQL Database and Data Lake. Further details can be found in the [full report]((../main/Full%20Report/Final%20Report.docx)).
+When attempting to bring in the semi-structured tweet data, MySQL created some errors due to the missing data. This would prove to be less of a concern in a NoSQL Database and Data Lake. Further details can be found in the [full report]((../main/Full%20Report/Final%20Report.docx)).
 
 [Back to Top](#BackToTop)
 
@@ -41,7 +41,15 @@ When attempting to bring in other related data such as location, MySQL struggled
 
 ## Creating Data Lake
 
-To create a simple example Data Lake, the team first created two NoSQL document databases in MongoDB. The first database imported the Covid-19 Twitter data that was pulled into MySQL above. The second database used Python packages tweepy and pymongo to pull in twitter data related to 'data lakes' within a specified date range. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb).
+To create a simple example Data Lake, the team first created two NoSQL document databases in MongoDB. The first database imported the Covid-19 Twitter data that was pulled into MySQL above. The second database used Python packages tweepy and pymongo to automatically pull 62 tweets related to 'data lakes' within a specified date range. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb).
+
+Next, the team configured an Atlas Data Lake that feeds in data from both databases.
+
+Configuration of Data Lake:
+<img width="310" alt="image" src="https://user-images.githubusercontent.com/37990637/158467057-734e1f2b-972c-4196-9ab4-4977dc907632.png">
+
+Example of data in Data Lake:
+<img width="330" alt="image" src="https://user-images.githubusercontent.com/37990637/158467217-fb2b9e21-2b68-4ecb-88eb-ca2a12a7381a.png">
 
 [Back to Top](#BackToTop)
 
@@ -51,9 +59,8 @@ To create a simple example Data Lake, the team first created two NoSQL document 
 
 ## Query Comparison
 
-[Project 3](../main/Project%203/Project_3.ipynb)
+In order to access the Data Lake, the team used MongoDB Compass and queried the data using MongoShell.
 
-This is a simple project with two parts. Part 1 - Stemmed Book Titles were tested for interpretability with another user. Part 2 - Compare examples in terms of % difference when you stem vs. lemmatize text. The text was tokenized, stemmed, and lemmatized using Python's NLTK package.
 
 [Back to Top](#BackToTop)
 
