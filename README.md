@@ -100,11 +100,11 @@ When to use a data warehouse and a data lake can easily be summarized in terms o
 
 ## References
 
-[Full Report]((../main/Full%20Report/Final%20Report.docx)).
+[Full Report](../main/Full%20Report/Final%20Report.docx)
 
 [Fetch Twitter sata and transfer to MongoDB](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb)
 
-[Fetch Twitter sata and transfer to MySQL](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb).
+[Fetch Twitter sata and transfer to MySQL](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb)
 
 [Data Lake Creation Walkthrough](../main/Walkthrough%20of%20Created%20Data%20Lake/Data%20Lake%20Walkthrough.docx)
 
