@@ -5,9 +5,9 @@
 
 **Contributors: Cameron Stewart, Nathan Deinlein, Cleveland Johnson**
 
->The goal of this project is to address two foundational questions.  The first question is “What is the difference between the data warehouse and data lake?”.  Once grounded in the differences, we will then seek to address “When does it make sense to use a data lake instead of a data warehouse?”. There are high level statements and understandings of the use cases for these data repositories, but demonstrating the use through implementation will allow our team to highlight specific differences. In this project, the team created a MySQL Database to act as a Data Warehouse and created a Data Lake using MongoDB. These created data repositories will be used to store Tweets related to 'Data Lakes' and 'Covid-19'.
+>The goal of this project is to address two foundational questions.  The first question is “What is the difference between the data warehouse and data lake?”.  Once grounded in the differences, we will then seek to address “When does it make sense to use a data lake instead of a data warehouse?”. There are high level statements and understandings of the use cases for these data repositories, but demonstrating the use through implementation will allow our team to highlight specific differences. In this project, the team created a Data Warehouse using MySQL and created a Data Lake using MongoDB. These created data repositories will be used to store Twitter data on tweets related to 'Data Lakes' and 'Covid-19'.
 
-Below, is a summary and the full report can be downloaded [here.](../main/Full%20Report/Final%20Report.docx)
+The information below is a summary and the full report can be downloaded [here](../main/Full%20Report/Final%20Report.docx).
 
 ---
 
@@ -24,9 +24,14 @@ Below, is a summary and the full report can be downloaded [here.](../main/Full%2
 
 ## Creating Data Warehouse
 
-[Project 1](../main/Project%201/Project_1.ipynb)
+To create a simple example Data Warehouse, the team created a single relational database in MySQL. Using Python packages mysql.connector and tweepy, the team was able to automatically pull ~80 tweets related to 'covid-19' in a specific date range into the MySQL database. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb).
 
-This project looks at the interaction between lexical diversity and vocabulary size at multiple reading levels. The text was tokenized using Python's NLTK package. Books analyzed were found at: [Project Gutenberg](http://www.gutenberg.org/ebooks/bookshelf/215).
+This database had a single table that only stored:
+- idTweets
+- Created_At
+- Tweet
+
+When attempting to bring in other related data such as location, MySQL struggled to parse the semi-structured data twitter produces. This would prove to be less of a concern in a NoSQL Database and Data Lake. Further details can be found in the [full report]((../main/Full%20Report/Final%20Report.docx)).
 
 [Back to Top](#BackToTop)
 
@@ -36,9 +41,7 @@ This project looks at the interaction between lexical diversity and vocabulary s
 
 ## Creating Data Lake
 
-[Project 2](../main/Project%202/Project_2.ipynb)
-
-This project develops a normalized score for both the vocabulary size of text and the long word vocabulary size of text. Using the mean of these normalized scores, I developed a text difficulty score that was tested across multiple reading levels. The project showed the created text difficulty score increased with the reading level. The text was tokenized using Python's NLTK package. Books analyzed were found at [Project Gutenberg](http://www.gutenberg.org/ebooks/bookshelf/215).
+To create a simple example Data Lake, the team first created two NoSQL document databases in MongoDB. The first database imported the Covid-19 Twitter data that was pulled into MySQL above. The second database used Python packages tweepy and pymongo to pull in twitter data related to 'data lakes' within a specified date range. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb).
 
 [Back to Top](#BackToTop)
 
