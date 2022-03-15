@@ -47,11 +47,11 @@ Next, the team configured an Atlas Data Lake that feeds in data from both databa
 
 Configuration of Data Lake:
 
-<img width="779" alt="image" src="https://user-images.githubusercontent.com/37990637/158467695-faacccdb-b2f2-4718-9474-f5905f093cee.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/37990637/158467695-faacccdb-b2f2-4718-9474-f5905f093cee.png">
 
 Example of data in Data Lake:
 
-<img width="831" alt="image" src="https://user-images.githubusercontent.com/37990637/158467632-54ba39b4-036e-48eb-b165-aea47dd737dc.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/37990637/158467632-54ba39b4-036e-48eb-b165-aea47dd737dc.png">
 
 [Back to Top](#BackToTop)
 
