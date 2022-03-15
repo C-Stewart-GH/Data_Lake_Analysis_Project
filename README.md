@@ -1,7 +1,7 @@
 <a name="BackToTop"></a>
 
 
-# What is the difference and situational use of a Data Lake vs. a Data Warehouse?
+# What is the difference and situational use of Data Lakes vs. Data Warehouses?
 
 **Contributors: Cameron Stewart, Nathan Deinlein, Cleveland Johnson**
 
