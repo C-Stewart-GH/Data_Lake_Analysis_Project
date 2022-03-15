@@ -84,11 +84,11 @@ Example Query in MySQL Database:
 
 ## Conclusion
 
-What is the difference between a data warehouse and a data lake?
+**What is the difference between a data warehouse and a data lake?**
 
 We observed a stark contrast between the data warehouse and data lake in terms of the structure of the data.  In the case of the data warehouse, we had to analyze initial data pulls from the Twitter API, discuss available fields, determine what question we wanted to answer with a query and then align on the table structure of the database.  This made us realize how accurate the schema on write moniker was for a data warehouse. While for the data lake, we merely had to capture the desired variables from the Twitter API, load them into a data frame and load them into the database. Based on these observations, the unstructured data ability of the data lake enabled speed of discovery, ingestion, and integration with other data sets. While this may appear to shift the work that it takes to transform data down the line, it specifically puts the ability to transform the data in a useful format in the hands of the person that has the business knowledge to make an informed decision. The data lake is made to handle large amounts of data when compared to the data warehouse. 
 
-When does it make sense to use a data lake instead of a data warehouse?
+**When does it make sense to use a data lake instead of a data warehouse?**
 
 When to use a data warehouse and a data lake can easily be summarized in terms of the problems being solved by the system. A data warehouse should be used where the solution is known for the problem and accessed routinely for operational decision.  An example of this would be start of day reports for investment bankers.  These users have a core set of known data that is aggregated from multiple systems and show historical information to prepare them for the start of the trading day. A data lake should be used when we still do not know the solution for the problem or are improving an existing solution.  This would require the discovery, ingestion, and wrangling of data to better understand the current state and present potential solutions for further analysis.  This approach would benefit from speed and flexibility provided by the data lake data platform. A good analogy often used to compare these concepts of data warehouse vs data lake is “agriculture vs. hunting/gathering”.
 
