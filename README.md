@@ -5,7 +5,7 @@
 
 **Contributors: Cameron Stewart, Nathan Deinlein, Cleveland Johnson**
 
->The goal of this project is to address two foundational questions.  The first question is “What is the difference between the data warehouse and data lake?”.  Once grounded in the differences, we will then seek to address “When does it make sense to use a data lake instead of a data warehouse?”. There are high level statements and understandings of the use cases for these data repositories, but demonstrating the use through implementation will allow our team to highlight specific differences. In this project, the team created a Data Warehouse using MySQL and created a Data Lake using MongoDB. These created data repositories will be used to store Twitter data on tweets related to 'Data Lakes' and 'Covid-19'.
+>The goal of this project is to address two foundational questions.  The first question is “What is the difference between the data warehouse and data lake?”.  Once grounded in the differences, we will then seek to address “When does it make sense to use a data lake instead of a data warehouse?”. There are high level statements and understandings of the use cases for these data repositories but demonstrating the use through implementation will allow our team to highlight specific differences. In this project, the team created a Data Warehouse using MySQL and created a Data Lake using MongoDB. These created data repositories will be used to store Twitter data on tweets related to 'Data Lakes' and 'Covid-19'.
 
 The information below is a summary and the full report can be downloaded [here](../main/Full%20Report/Final%20Report.docx).
 
@@ -45,7 +45,7 @@ Document walking through the creation of the Data Lake [here](../main/Walkthroug
 
 To create a simple example Data Lake, the team first created two NoSQL document databases in MongoDB. The first database imported the Covid-19 Twitter data that was pulled into MySQL above. The second database used Python packages tweepy and pymongo to automatically pull 62 tweets related to 'data lakes' within a specified date range. Jupyter Notebook used to pull in the data can be found [here](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb).
 
-Next, the team configured an Atlas Data Lake that feeds in data from both databases. Each database features did not match and this is acceptable in a Data Lake. This is because Data Lakes allow an unstructured data extract and the transformation of the data into an organized format will occur at the point when the data is needed. In a Data Warehouse, this would not be possible because the data must be in a consistent structured format.
+Next, the team configured an Atlas Data Lake that feeds in data from both databases. Each database features did not match, and this is acceptable in a Data Lake. This is because Data Lakes allow an unstructured data extract and the transformation of the data into an organized format will occur at the point when the data is needed. In a Data Warehouse, this would not be possible because the data must be in a consistent structured format.
 
 Configuration of Data Lake:
 
@@ -63,7 +63,7 @@ Example of data in Data Lake:
 
 ## Query Comparison
 
-In order to access the Data Lake, the team used MongoDB Compass and queried the data using MongoShell. This query searches all the documents from both databases for occurances of the word "data" and a retweet count of 0.
+To access the Data Lake, the team used MongoDB Compass and queried the data using MongoShell. This query searches all the documents from both databases for occurrences of the word "data" and a retweet count of 0.
 
 Example Query and Output from Data Lake:
 
@@ -102,9 +102,9 @@ When to use a data warehouse and a data lake can easily be summarized in terms o
 
 [Full Report](../main/Full%20Report/Final%20Report.docx)
 
-[Fetch Twitter sata and transfer to MongoDB](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb)
+[Fetch Twitter data and transfer to MongoDB](../main/Jupyter%20Notebooks/Gather_Tweets_and_Upload_to_MongoDB.ipynb)
 
-[Fetch Twitter sata and transfer to MySQL](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb)
+[Fetch Twitter data and transfer to MySQL](../main/Jupyter%20Notebooks/Twitter%20API%20to%20SQL%20DB.ipynb)
 
 [Data Lake Creation Walkthrough](../main/Walkthrough%20of%20Created%20Data%20Lake/Data%20Lake%20Walkthrough.docx)
 
@@ -118,6 +118,6 @@ MongoDB
 
 MongoDB Compass
 
-MySql
+MySQL
 
 [Back to Top](#BackToTop)
