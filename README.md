@@ -46,10 +46,12 @@ To create a simple example Data Lake, the team first created two NoSQL document 
 Next, the team configured an Atlas Data Lake that feeds in data from both databases.
 
 Configuration of Data Lake:
-<img width="310" alt="image" src="https://user-images.githubusercontent.com/37990637/158467057-734e1f2b-972c-4196-9ab4-4977dc907632.png">
+
+<img width="779" alt="image" src="https://user-images.githubusercontent.com/37990637/158467695-faacccdb-b2f2-4718-9474-f5905f093cee.png">
 
 Example of data in Data Lake:
-<img width="330" alt="image" src="https://user-images.githubusercontent.com/37990637/158467217-fb2b9e21-2b68-4ecb-88eb-ca2a12a7381a.png">
+
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/37990637/158467632-54ba39b4-036e-48eb-b165-aea47dd737dc.png">
 
 [Back to Top](#BackToTop)
 
